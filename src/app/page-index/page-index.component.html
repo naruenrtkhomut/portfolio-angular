@@ -1,0 +1,27 @@
+<app-page-layout></app-page-layout>
+<div class="main-view">
+    <div class="main-detail-view">
+        <div>Hello, I'm</div>
+        <div class="get-name-detail">Naruenat Komoot</div>
+        <div>I'm a</div>
+        <div class="get-name-detail">Software Developer</div>
+        <div class="skill-show">
+            @for (GETSKILL of GETSKILL; track GETSKILL) {
+                @if (GETSKILL.ID == SKILLINDEX) {
+                    <div class="skill-header-name">{{GETSKILL.NAME}}</div>
+                    <img src="{{GETSKILL.SVGSRC}}" alt="{{GETSKILL.NAME}}">
+                    <div class="skill-name">{{GETSKILL.SKILL_NAME}}</div>
+                }
+            }
+        </div>
+    </div>
+    <div class="main-profile-view">
+        <div class="profile-image-view">
+            @for (GETPROFILEIMAGE of GETPROFILEIMAGES; track GETPROFILEIMAGE) {
+                <div [hidden]="GETPROFILEIMAGE.ID != PROFILEINDEX" class="profile-image-animation">
+                    <img src="{{GETPROFILEIMAGE.IMAGESRC_BASE64}}" alt="{{GETPROFILEIMAGE.NAME}}">
+                </div>
+            }
+        </div>
+    </div>
+</div>

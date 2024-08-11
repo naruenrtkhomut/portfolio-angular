@@ -1,0 +1,68 @@
+.main-view {
+    background-color: #090d12;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.main-detail-view {
+    color: #bbfaf6;
+    font-size: 2.5vw;
+    padding: 5% 0 0 5%;
+}
+.get-name-detail {
+    font-size: 5vw;
+    padding-left: 5%;
+}
+.main-profile-view {
+    width: 100%;
+    height: 100%;
+}
+.profile-image-view {
+    padding: 10% 0 0 10%;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.profile-image-view div img {
+    width: 100%;
+}
+.profile-image-animation {
+    animation-name: animation-profile-image;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.skill-show {
+    text-align: center;
+    width: 100%;
+}
+.skill-show img {
+    width: 20%;
+}
+.skill-header-name {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 5vw;
+}
+.skill-name {
+    font-size: 4VW;
+}
+
+
+@keyframes animation-profile-image {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+}
